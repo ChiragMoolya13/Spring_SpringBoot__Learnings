@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="orderService"-->
+<!--          class="com.chirag.OrderService">-->
+<!--        <constructor-arg ref="paymentService"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="orderService"-->
+<!--          class="com.chirag.OrderService">-->
+<!--        <property name="paymentService" ref="paymentService"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="paymentService" class="com.chirag.payment.PaymentService">-->
+<!--        <constructor-arg name="type" value="UPI"/>-->
+<!--        <constructor-arg name="retryCount" value="3"/>-->
+<!--    </bean>-->
+
+    <bean id="upiPaymentService" class="com.chirag.payment.UPIPaymentService"/>
+<!--    <bean id="cardPaymentService" class="com.chirag.payment.CardPaymentService"/>-->
+
+<!--    <bean id="orderService" class="com.chirag.OrderService">-->
+<!--        <constructor-arg ref="upiPaymentService"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="userService" class="com.chirag.UserService">-->
+<!--        <constructor-arg name="usernames">-->
+<!--           <list>-->
+<!--               <value>Chirag</value>-->
+<!--               <value>Prayag</value>-->
+<!--               <value>Pushpa</value>-->
+<!--           </list>-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+
+</beans>
