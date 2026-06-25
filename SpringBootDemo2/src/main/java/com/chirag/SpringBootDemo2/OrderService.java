@@ -1,4 +1,4 @@
-package com.chirag;
+package com.chirag.SpringBootDemo2;
 
 import org.springframework.stereotype.Component;
 
