@@ -48,8 +48,11 @@ public class UserServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String idParam = request.getParameter("id");
         if(idParam==null){
-            List<User> user = userService.getAllUsers();
-            //return user;
+            List<User> users = userService.getAllUsers();
+            response.setStatus(200);
+            response.setContentType("application/json");
+            response.getWriter().write(usersToJson(users));
+            return;
         }else{
             Integer id = Integer.parseInt(idParam);
             User userResp = userService.getUserById(id);
@@ -59,9 +62,7 @@ public class UserServlet extends HttpServlet {
             }else{
                 response.setStatus(200);
                 response.setContentType("application/json");
-                response.getWriter().write(
-
-                );
+                response.getWriter().write(userToJson(userResp));
             }
         }
     }
@@ -83,5 +84,20 @@ public class UserServlet extends HttpServlet {
                 "    \"email\": " + user.getEmail() + ",\n" +
                 "    \"mobile\": " + user.getMobile() + "\n" +
                 "}";
+    }
+
+    private String usersToJson(List<User> users){
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("[");
+
+        for(int i = 0; i< users.size();i++){
+            stringBuilder.append(userToJson(users.get(i)));
+            if(i< users.size() - 1){
+                stringBuilder.append(",");
+            }
+        }
+        stringBuilder.append("]");
+
+        return stringBuilder.toString();
     }
 }

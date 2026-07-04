@@ -1,0 +1,49 @@
+04-Jul-2026 12:19:38.175 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.119
+04-Jul-2026 12:19:38.183 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 18 2026 07:06:31 UTC
+04-Jul-2026 12:19:38.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.119.0
+04-Jul-2026 12:19:38.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+04-Jul-2026 12:19:38.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+04-Jul-2026 12:19:38.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Jul-2026 12:19:38.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+04-Jul-2026 12:19:38.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.1+12-LTS-29
+04-Jul-2026 12:19:38.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Jul-2026 12:19:38.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119
+04-Jul-2026 12:19:38.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119
+04-Jul-2026 12:19:38.207 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+04-Jul-2026 12:19:38.207 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+04-Jul-2026 12:19:38.207 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+04-Jul-2026 12:19:38.208 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+04-Jul-2026 12:19:38.208 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+04-Jul-2026 12:19:38.208 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+04-Jul-2026 12:19:38.208 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+04-Jul-2026 12:19:38.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119\conf\logging.properties
+04-Jul-2026 12:19:38.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jul-2026 12:19:38.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jul-2026 12:19:38.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jul-2026 12:19:38.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+04-Jul-2026 12:19:38.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jul-2026 12:19:38.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119
+04-Jul-2026 12:19:38.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119
+04-Jul-2026 12:19:38.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119\temp
+04-Jul-2026 12:19:38.223 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.8] using APR version [1.7.6].
+04-Jul-2026 12:19:38.223 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+04-Jul-2026 12:19:38.223 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+04-Jul-2026 12:19:38.247 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.21 9 Jun 2026]
+04-Jul-2026 12:19:38.746 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jul-2026 12:19:38.794 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [925] milliseconds
+04-Jul-2026 12:19:38.873 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jul-2026 12:19:38.873 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.119]
+04-Jul-2026 12:19:38.900 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119\webapps\crud-app.war]
+04-Jul-2026 12:19:39.442 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119\webapps\crud-app.war] has finished in [541] ms
+04-Jul-2026 12:19:39.444 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119\webapps\docs]
+04-Jul-2026 12:19:39.525 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119\webapps\docs] has finished in [80] ms
+04-Jul-2026 12:19:39.526 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119\webapps\examples]
+04-Jul-2026 12:19:40.379 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119\webapps\examples] has finished in [854] ms
+04-Jul-2026 12:19:40.380 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119\webapps\host-manager]
+04-Jul-2026 12:19:40.441 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119\webapps\host-manager] has finished in [60] ms
+04-Jul-2026 12:19:40.441 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119\webapps\manager]
+04-Jul-2026 12:19:40.498 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119\webapps\manager] has finished in [56] ms
+04-Jul-2026 12:19:40.498 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119\webapps\ROOT]
+04-Jul-2026 12:19:40.538 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\chira\Desktop\SpringBoot Learnings\apache-tomcat-9.0.119\webapps\ROOT] has finished in [39] ms
+04-Jul-2026 12:19:40.544 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jul-2026 12:19:40.581 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1784] milliseconds
