@@ -3,14 +3,15 @@ package com.chirag;
 import com.chirag.config.WebConfig;
 import org.apache.catalina.Context;
 import org.apache.catalina.LifecycleException;
+import org.apache.catalina.Wrapper;
 import org.apache.catalina.startup.Tomcat;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.web.context.WebApplicationContext;
+import org.apache.jasper.servlet.JasperInitializer;
+import org.apache.jasper.servlet.JspServlet;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
 import java.io.File;
+import java.util.Set;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -25,13 +26,25 @@ public class Main {
 
         Context context = tomcat.addContext(contextPath, baseDoc);
 
-        AnnotationConfigWebApplicationContext springContext = new AnnotationConfigWebApplicationContext();
+        context.addServletContainerInitializer(new JasperInitializer(), Set.of());
+
+        Wrapper jspWrapper = Tomcat.addServlet(context, "jsp", new JspServlet());
+        jspWrapper.setLoadOnStartup(3);
+        context.addServletMappingDecoded("*.jsp", "jsp");
+        context.addServletMappingDecoded("*.jspx", "jsp");
+
+        AnnotationConfigWebApplicationContext springContext =
+                new AnnotationConfigWebApplicationContext();
 
         springContext.register(WebConfig.class);
 
-        DispatcherServlet dispatcherServlet = new DispatcherServlet(springContext);
+        DispatcherServlet dispatcherServlet =
+                new DispatcherServlet(springContext);
 
-        Tomcat.addServlet(context,"dispatcherServlet", dispatcherServlet);
+        Wrapper dispatcherWrapper =Tomcat.addServlet(
+                context,"dispatcherServlet", dispatcherServlet);
+
+        dispatcherWrapper.setLoadOnStartup(1);
 
         context.addServletMappingDecoded("/", "dispatcherServlet");
 
