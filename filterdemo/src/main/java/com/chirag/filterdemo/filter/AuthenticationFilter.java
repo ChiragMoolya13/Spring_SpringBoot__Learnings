@@ -7,9 +7,9 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
-@Component
-@Order(1)
-public class AuthenticationFilter implements Filter {
+//@Component
+//@Order(1)
+public class  AuthenticationFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest,
                          ServletResponse servletResponse,
@@ -21,23 +21,29 @@ public class AuthenticationFilter implements Filter {
         HttpServletResponse httpResponse = (HttpServletResponse) servletResponse;
 
         String token = httpRequest.getHeader("token");
-        String apiKey = httpRequest.getHeader("x-api-key");
+//        String apiKey = httpRequest.getHeader("x-api-key");
 
         if(token == null || !token.equals("12345")){
-            httpResponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-            return;
-        }
-
-        if (apiKey==null|| !apiKey.equals("secret123")){
             httpResponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             httpResponse.setContentType("application/json");
             httpResponse.getWriter().write(
                     "{\n" +
-                            "    \"message\": \"Invalid or missing Api Key\"\n" +
-                            "}"
+                            "    \"message\": \"Authentication is required\"\n" +
+                            "}\n"
             );
             return;
         }
+
+//        if (apiKey==null|| !apiKey.equals("secret123")){
+//            httpResponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+//            httpResponse.setContentType("application/json");
+//            httpResponse.getWriter().write(
+//                    "{\n" +
+//                            "    \"message\": \"Invalid or missing Api Key\"\n" +
+//                            "}"
+//            );
+//            return;
+//        }
 
         filterChain.doFilter(servletRequest,servletResponse);
     }

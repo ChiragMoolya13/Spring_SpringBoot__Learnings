@@ -1,19 +1,16 @@
 package com.chirag.filterdemo.service;
 
 import com.chirag.filterdemo.dto.Student;
+import com.chirag.filterdemo.dto.StudentResponseDto;
 import org.springframework.stereotype.Service;
 
 @Service
 public class StudentService {
-    public void createStudent(Student student){
-        System.out.println("Student Created");
-        System.out.println(student.getName());
-        System.out.println(student.getEmail());
+    public StudentResponseDto createStudent(Student student){
+        StudentResponseDto responseDto = new StudentResponseDto();
+        responseDto.setName(student.getName());
+        responseDto.setMessage("Student is saved successfully");
 
-        try{
-            Thread.sleep(2000);
-        }catch (Exception e){
-
-        }
+        return responseDto;
     }
 }

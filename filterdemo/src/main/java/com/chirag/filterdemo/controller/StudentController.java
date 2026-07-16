@@ -1,6 +1,7 @@
 package com.chirag.filterdemo.controller;
 
 import com.chirag.filterdemo.dto.Student;
+import com.chirag.filterdemo.dto.StudentResponseDto;
 import com.chirag.filterdemo.service.StudentService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,8 +20,8 @@ public class StudentController  {
     }
 
     @PostMapping
-    public ResponseEntity<String> createStudent(@RequestBody Student student){
-        studentService.createStudent(student);
-        return ResponseEntity.ok("Done");
+    public ResponseEntity<StudentResponseDto> createStudent(@RequestBody Student student){
+        StudentResponseDto responseDto = studentService.createStudent(student);
+        return ResponseEntity.ok(responseDto);
     }
 }
